@@ -18,7 +18,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".TwitterActivity"
+            android:label="@string/title_activity_twitter" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
         <activity
             android:name="com.facebook.FacebookActivity"
             android:label="@string/app_name"
@@ -28,10 +39,10 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_login" />
 
-        <activity
-            android:name=".Profile"
-            android:label="@string/title_activity_profile" >
-        </activity>
+
     </application>
 
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

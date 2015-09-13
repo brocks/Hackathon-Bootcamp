@@ -3,6 +3,15 @@
 
     <string name="facebook_login">1109062582467423</string>
     <string name="action_settings">Settings</string>
+
+    <string name="title_activity_twitter">TwitterActivity</string>
+
+    <string-array name="planets_array">
+        <item>Global</item>
+        <item>RamHacks</item>
+
+    </string-array>
+
     <string name="title_activity_profile">Profile</string>
 
     //Skill Selection strings
@@ -13,4 +22,5 @@
     <string name="angular_skill">Angular JS</string>
     <string name="swift_skill">Swift</string>
     <string name="graphic_design">Graphic Design</string>
+
 </resources>
