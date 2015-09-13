@@ -3,4 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_twitter">TwitterActivity</string>
+
+    <string-array name="planets_array">
+        <item>Global</item>
+        <item>RamHacks</item>
+
+    </string-array>
 </resources>
