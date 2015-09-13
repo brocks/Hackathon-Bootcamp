@@ -40,13 +40,13 @@ public class TweetAdapter extends ArrayAdapter<Tweet> {
 
             TextView name = (TextView) view.findViewById(R.id.name);
 //            TextView usuario = (TextView) view.findViewById(R.id.usuario);
-//            ImageView imagem = (ImageView) view.findViewById(R.id.imagem_perfil);
+            ImageView image = (ImageView) view.findViewById(R.id.profileImage);
             TextView message = (TextView) view.findViewById(R.id.message);
             TextView data = (TextView) view.findViewById(R.id.data);
 
             name.setText("[ "+tweet.getNome()+" ]");
 //            usuario.setText("@" + tweet.getUsuario());
-//            BitmapManager.getInstance().loadBitmap(tweet.getUrlImagemPerfil(), imagem);
+            BitmapManager.getInstance().loadBitmap(tweet.getUrlImagemPerfil(), image);
 
 //            Get message links
             String messageText = tweet.getMensagem().replaceAll("(\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|])","<a href=\"$1\">$1</a>");

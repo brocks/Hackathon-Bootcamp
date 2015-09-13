@@ -72,7 +72,7 @@ public class Tweet {
         TimeZone tzUTC = TimeZone.getTimeZone("UTC");
         SimpleDateFormat formatoEntrada = new SimpleDateFormat("EEE MMM dd HH:mm:ss yyyy", Locale.US);
         formatoEntrada.setTimeZone(tzUTC);
-        SimpleDateFormat formatoSaida = new SimpleDateFormat("EEE, dd/MM/yy, 'às' HH:mm");
+        SimpleDateFormat formatoSaida = new SimpleDateFormat("EEE, dd/MM/yy, 'at' HH:mm");
 
         try {
             strData = formatoSaida.format(formatoEntrada.parse(data));
@@ -82,16 +82,7 @@ public class Tweet {
         return strData;
     }
 
-    /**
-     * Remove, utilizando uma expressão regular, a timezone da data, o que evita a demora (possível bug?)
-     * ao fazer o parser da data usando o método simpleDateFormat.
-     * @param data a data ainda com a timezone (Ex.: "Sun Jun 16 13:25:23 +0000 2013", onde "+0000"
-     * é a timezone)
-     *
-     * @return a data sem a timezone (Ex.: "Sun Jun 16 13:25:23 2013")
-     *
-     * @see {@link java.util.regex.Pattern}
-     */
+
     private String removerTimeZone(String data){
         // busca na string e remove o padrão " (+ ou -)dddd" Ex: " +3580"
         return data.replaceFirst("(\\s[+|-]\\d{4})", "");
