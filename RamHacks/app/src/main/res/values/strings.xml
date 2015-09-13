@@ -22,5 +22,9 @@
     <string name="angular_skill">Angular JS</string>
     <string name="swift_skill">Swift</string>
     <string name="graphic_design">Graphic Design</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

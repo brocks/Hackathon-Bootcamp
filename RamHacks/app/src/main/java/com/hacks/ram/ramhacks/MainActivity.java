@@ -1,6 +1,5 @@
 package com.hacks.ram.ramhacks;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -33,8 +32,14 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                Intent intent = new Intent(context,TwitterActivity.class);
-                startActivity(intent);
+                Intent twitterIntent = new Intent(context, TwitterActivity.class);
+                startActivity(twitterIntent);
+
+                /**String facebookURL = "fb//profile/591858720864810";
+                Intent fbIntent = new Intent(Intent.ACTION_GET_CONTENT, Uri.parse(facebookURL));
+                startActivity(fbIntent);
+                 **/
+
 
             }
 
@@ -54,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
