@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">RamHacks</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="facebook_login">1109062582467423</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">Profile</string>
+
+    //Skill Selection strings
+    <string name="java_skill">Java</string>
+    <string name="php_skill">PHP</string>
+    <string name="javascript_skill">JavaScript</string>
+    <string name="sql_skill">SQL</string>
+    <string name="angular_skill">Angular JS</string>
+    <string name="swift_skill">Swift</string>
+    <string name="graphic_design">Graphic Design</string>
 </resources>
